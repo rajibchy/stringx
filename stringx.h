@@ -13,12 +13,8 @@
 #define NULL ((void *)0)
 #endif
 #endif
-#define _strxp(str)(\
-	new Stringx<_STD string>(str)\
-)
-#define _strx(str)(\
-	Stringx<_STD string>(str)\
-)
+#define _Stringx
+
 template <class Type> class Stringx;
 
 template <class Type> class Stringx {
@@ -156,5 +152,5 @@ public:
 protected:
 	//
 };
+
 typedef Stringx<std::string> stringx;
-//using stringx = Stringx<std::string>;
